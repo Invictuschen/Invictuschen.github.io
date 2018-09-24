@@ -1,5 +1,6 @@
 {
-  "name": "my-blog",
+  "homepage": "https://invictuschen.github.io/page/",
+  "name": "Zhouce'shome",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -30,6 +31,7 @@
     "fastclick": "^1.0.6",
     "file-loader": "1.1.5",
     "fs-extra": "3.0.1",
+    "gh-pages": "^2.0.0",
     "history": "^4.7.2",
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
@@ -60,12 +62,14 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "pregh": "npm run build",
+    "gh": "gh-pages -d dist",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "bundle-loader": "^0.5.6"
   },
-  "homepage": ".",
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}"

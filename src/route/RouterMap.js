@@ -37,12 +37,12 @@ const AsyncAbout = Loadable({
 export default ()=>{
   return(
     <Switch>
-      <Route exact path='/' component={ AsyncHome }/>
+      <Route exact path='/home' component={ AsyncHome }/>
       <Route path='/work' component={ AsyncWork }/>
       <Route path='/blog' component={ AsyncWelcome}/>
       <Route path='/about' component={ AsyncAbout}/>
       {/*<Route path='/404' component={ AsyncErro }/>*/}
-      <Redirect to="/" />
+      <Redirect to="/home" />
     </Switch>  
   )
 }

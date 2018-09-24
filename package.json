@@ -64,7 +64,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "pregh": "npm run build",
-    "gh": "gh-pages -d dist",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {

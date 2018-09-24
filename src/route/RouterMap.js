@@ -13,20 +13,20 @@ const AsyncHome = Loadable({
     loading: MyLoadingComponent
 });
 // work
-const AsyncWork = Loadable({
-    loader: () => import('../page/work'),
-    loading: MyLoadingComponent
-});
+// const AsyncWork = Loadable({
+//     loader: () => import('../page/work'),
+//     loading: MyLoadingComponent
+// });
 // blog
-const AsyncWelcome = Loadable({
-    loader: () => import('../page/blog'),
-    loading: MyLoadingComponent
-});
-// about
-const AsyncAbout = Loadable({
-    loader: () => import('../page/about'),
-    loading: MyLoadingComponent
-});
+// const AsyncWelcome = Loadable({
+//     loader: () => import('../page/blog'),
+//     loading: MyLoadingComponent
+// });
+// // about
+// const AsyncAbout = Loadable({
+//     loader: () => import('../page/about'),
+//     loading: MyLoadingComponent
+// });
 
 // 404页面
 // const AsyncErro = Loadable({
@@ -38,7 +38,7 @@ export default ()=>{
   return(
     <Switch>
       <Route exact path='/' component={ AsyncHome }/>
-      <Route path='/work' component={ AsyncWork }/>
+      {/*<Route path='/work' component={ AsyncWork }/>*/}
       {/*<Route path='/blog' component={ AsyncWelcome}/>*/}
       {/*<Route path='/about' component={ AsyncAbout}/>*/}
       {/*<Route path='/404' component={ AsyncErro }/>*/}

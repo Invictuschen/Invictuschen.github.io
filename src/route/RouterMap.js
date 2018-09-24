@@ -29,20 +29,20 @@ const AsyncAbout = Loadable({
 });
 
 // 404页面
-const AsyncErro = Loadable({
-    loader: () => import('../page/notfind'),
-    loading: MyLoadingComponent
-});
+// const AsyncErro = Loadable({
+//     loader: () => import('../page/notfind'),
+//     loading: MyLoadingComponent
+// });
 
 export default ()=>{
   return(
     <Switch>
       <Route exact path='/' component={ AsyncHome }/>
       <Route path='/work' component={ AsyncWork }/>
-      <Route path='/blog' component={ AsyncWelcome}/>
-      <Route path='/about' component={ AsyncAbout}/>
-      <Route path='/404' component={ AsyncErro }/>
-      <Redirect to="/404"/>
+      {/*<Route path='/blog' component={ AsyncWelcome}/>*/}
+      {/*<Route path='/about' component={ AsyncAbout}/>*/}
+      {/*<Route path='/404' component={ AsyncErro }/>*/}
+      {/*<Redirect to="/404"/>*/}
     </Switch>  
   )
 }

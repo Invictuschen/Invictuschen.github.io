@@ -37,8 +37,8 @@ export function Mail(){
       <div className={Css.img}>
         <img src={aboutImg.imail} alt=""/>
       </div> 
-      <h3>arthur.ou@foxmail.com</h3>
-      <a href="mailto:arthur.ou@foxmail.com" className={Css.linkIcon}></a>
+      <h3>InvictusChen</h3>
+      <a href="" className={Css.linkIcon}></a>
     </Pop>
   )
 }

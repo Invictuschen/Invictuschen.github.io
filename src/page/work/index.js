@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Switch from '@c/switch'
 import ListCompon from './listcomponent'
+import Layout from './burger/components/Layout/Layout'
+import BurgerBuilder from './burger/containers/BurgerBuilder/BurgerBuilder';
 import {workIcon} from '@c/imgurls'
 import isPhone from '@/utils/isPhone'
 import {scroll, more, moreIcon} from './work.scss'
@@ -86,7 +88,9 @@ export default class Work extends Component{
     return (
       <main className={"page "+scroll}>
         <div style={{height:'auto',paddingBottom:'6rem'}} className="app-center">
-
+          <Layout>
+              <BurgerBuilder />
+          </Layout>
           {/*<ListCompon style={type!=="code"} title="Desgin" figures={this.state.desginFigu} shows={this.show.bind(this)}  close={this.close.bind(this)}/>*/}
           {/*<ListCompon style={type==="code"} title="Code" figures={this.state.codeFigu} shows={this.show.bind(this)}  close={this.close.bind(this)}/>*/}
           {/*<div onClick={this.toAbout} className={more}>*/}
@@ -95,7 +99,7 @@ export default class Work extends Component{
             {/*</span>*/}
             {/*<span className="needsclick">VIEW MORE</span>*/}
           {/*</div>*/}
-          {this.state.switchin?<Switch type="enter" callback={this.switchOut.bind(this)}/>:''}
+          {/*{this.state.switchin?<Switch type="enter" callback={this.switchOut.bind(this)}/>:''}*/}
         </div>
       </main>
     )

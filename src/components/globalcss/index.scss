@@ -94,6 +94,7 @@ body {
         line-height: 38px;
       }
     }
+
     .mobile-logo{
       position: relative;
       img{
@@ -194,6 +195,9 @@ body {
   height: calc(100% - 36px);
   .app-center{
     height: 100%;
+    .logo {
+      height: 100%;
+    }
   }
 }
 .main-bg .main,.main-bg{

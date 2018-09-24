@@ -34,7 +34,7 @@ export default class Header extends Component{
     let paths = []
     this.state.nav.map((i)=>paths.push(i.herf.toString())) 
     let path = this.props.history.location.pathname.toString();
-    let index = paths.indexOf(path)> -1 ? paths.indexOf(path) : 1
+    let index = paths.indexOf(path)> -1 ? paths.indexOf(path) : 0
     this.handleIndex(index)
   }
   handleIndex(index){

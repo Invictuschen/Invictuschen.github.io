@@ -9,6 +9,7 @@ import * as imgUrls from './components/imgurls'
 import FastClick from 'fastclick'
 FastClick.attach(document.body);
 
+// const imgUrls = [];
 
 // 预加载图片
 var myloadingimgs = []

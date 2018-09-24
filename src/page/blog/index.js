@@ -41,7 +41,7 @@ export default class Blog extends Component {
               </div>
               <span className="doll-shadow"></span>
             </div>
-            <h1 style={hStyle}>- 敬请期待 -</h1>
+            <h1 style={hStyle}>- Under Development -</h1>
           </div>
         </div>
         {this.state.switchin?<Switch type="enter" callback={this.switchOut.bind(this)}/>:''}

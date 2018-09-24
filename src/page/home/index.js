@@ -39,16 +39,16 @@ export default class Home extends Component{
 
   /**
    * 获取kookie
-   * @param {string} name 
+   * @param {string} name
    */
-  getCookie(name) 
-  { 
+  getCookie(name)
+  {
     var arr,reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
     if(arr=document.cookie.match(reg))
-        return unescape(arr[2]); 
-    else 
-        return null; 
-  } 
+        return unescape(arr[2]);
+    else
+        return null;
+  }
   setCookie(name,value){
         var exp = new Date();
         exp.setTime(exp.getTime() + 7 * 24 * 3600 * 1000);
@@ -56,7 +56,7 @@ export default class Home extends Component{
   }
   /**
    * 保存用户信息至state（子组件注册成功调用）
-   * @param {object} opt 
+   * @param {object} opt
    */
   setLoading(opt){
     this.setState({
@@ -72,7 +72,7 @@ export default class Home extends Component{
     this.setState({
       model: true,
       modelType: 'err'
-    })  
+    })
   }
   // 页面切换动画控制
   switchOut(n){
@@ -89,16 +89,16 @@ export default class Home extends Component{
   render(){
     return(
       <main className="page">
-        <div className="app-center">
+         <div className="app-center">
           <TextNode/>
-          <Footer/>
-          <MyIcon 
-            user={this.state.user} 
+          {/*<Footer/>*/}
+          <MyIcon
+            user={this.state.user}
             setUser={this.setLoading.bind(this)}
-            isErro={this.isErro.bind(this)} 
+            isErro={this.isErro.bind(this)}
           />
         </div>
-        <CSSTransition
+         <CSSTransition
         in={this.state.model}
         key='tests'
         timeout={200}

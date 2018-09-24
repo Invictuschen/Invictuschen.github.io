@@ -124,7 +124,8 @@ export default class SupPug extends Component{
     <div className={Css.supBox}>
          <div className={Css.addSupNum}>
             <h1>THANK U!</h1>
-            <AddSup num={this.props.add.num}/>
+           <h2>Appreciate!</h2>
+            {/*<AddSup num={this.props.add.num}/>*/}
          </div>
       <div ref = "imgs">
         {this.src.map((src,i) => <img key={i} src={src}/> )}

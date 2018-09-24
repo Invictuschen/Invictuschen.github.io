@@ -21,7 +21,7 @@ $color_bright: #443230;
     left:  50%;
     width: 500px;
     height: 150px;
-    background-color: #ff6d8e;
+    background-color: #aaf6fa;
     transform: translate(-50%,-50%);
     border: 4px solid #ffffff;
     h1{
@@ -30,6 +30,11 @@ $color_bright: #443230;
         font-weight:  bold;
         color: #ffffff;
         text-align:  center;
+    }
+    h2{
+      font-size: 30px;
+      color: #ffffff;
+      text-align: center;
     }
     .numSpan{
         text-align: center;

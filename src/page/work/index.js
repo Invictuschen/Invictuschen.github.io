@@ -6,6 +6,7 @@ import isPhone from '@/utils/isPhone'
 import {scroll, more, moreIcon} from './work.scss'
 import desgin from './desgins'
 import code from './codes'
+// import mario from './html5-mario/index.html';
 
 /**
  * @name work页
@@ -85,14 +86,15 @@ export default class Work extends Component{
     return (
       <main className={"page "+scroll}>
         <div style={{height:'auto',paddingBottom:'6rem'}} className="app-center">
-          <ListCompon style={type!=="code"} title="Desgin" figures={this.state.desginFigu} shows={this.show.bind(this)}  close={this.close.bind(this)}/>
-          <ListCompon style={type==="code"} title="Code" figures={this.state.codeFigu} shows={this.show.bind(this)}  close={this.close.bind(this)}/>
-          <div onClick={this.toAbout} className={more}>
-            <span className={moreIcon}>
-              <i></i>
-            </span>
-            <span className="needsclick">VIEW MORE</span>
-          </div>
+
+          {/*<ListCompon style={type!=="code"} title="Desgin" figures={this.state.desginFigu} shows={this.show.bind(this)}  close={this.close.bind(this)}/>*/}
+          {/*<ListCompon style={type==="code"} title="Code" figures={this.state.codeFigu} shows={this.show.bind(this)}  close={this.close.bind(this)}/>*/}
+          {/*<div onClick={this.toAbout} className={more}>*/}
+            {/*<span className={moreIcon}>*/}
+              {/*<i></i>*/}
+            {/*</span>*/}
+            {/*<span className="needsclick">VIEW MORE</span>*/}
+          {/*</div>*/}
           {this.state.switchin?<Switch type="enter" callback={this.switchOut.bind(this)}/>:''}
         </div>
       </main>

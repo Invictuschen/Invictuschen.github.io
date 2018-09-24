@@ -12,7 +12,7 @@ import setting from '../images/setting.png'
 import logo1 from '../images/logo1.png'
 import logo2 from '../images/logo2.png'
 import chick from '../images/chicken.png'
-import moneky from '../images/moneky.png'
+import moneky from '../images/monkey.png'
 import game from '../images/game.png'
 import jquo from '../images/jquo.png'
 import pictring from '../images/pictring.png'
@@ -26,11 +26,11 @@ import igit from '../images/mygit.png'
 import icode from '../images/mycode.png'
 import iadd from '../images/myadd.png'
 import icity from '../images/citybg.png'
-import emjz from '../images/emoji/zzz.png'
-import emjs from '../images/emoji/sad.png'
-import emja from '../images/emoji/anger.png'
-import emjd from '../images/emoji/dis.png'
-import emjh from '../images/emoji/happy.png'
+import emjz from '../images/zzz.png'
+import emjs from '../images/sad.png'
+import emja from '../images/anger.png'
+import emjd from '../images/dis.png'
+import emjh from '../images/happy.png'
 import icloud from '../images/aboutbg.png'
 import myfont from '../images/myfont.png'
 
@@ -56,7 +56,7 @@ import g18 from '../images/gifs/g18.gif'
 
 const parrotSrc =  [
       g1,g2,g3,g4,g5,g6,g7,g8,g9,g10,g11,g12,g13,g14,g15,g16,g17,g18
-    ] 
+    ]
 
 const homeIcon = {
   sup,
@@ -65,7 +65,7 @@ const homeIcon = {
   setting
 }
 
-const homeImg = { 
+const homeImg = {
   glitch,
   mail,
   smile

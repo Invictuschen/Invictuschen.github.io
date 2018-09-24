@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-
+import initCSS from '../globalcss/index.scss'
 
 /**
  * @name 导航栏组件
@@ -20,8 +20,8 @@ export default class Header extends Component{
       nav:[
         {indent:true,text:'HOME',herf:'/'},
         {indent:false,text:'WORK',herf:'/work'},
-        {indent:false,text:'ABOUT',herf:'/about'},
-        {indent:false,text:'BLOG',herf:'/blog'},
+        // {indent:false,text:'ABOUT',herf:'/about'},
+        // {indent:false,text:'BLOG',herf:'/blog'},
       ],
       now: TimeNow(), //当前index，用来避免重复点击当前nav引起的页面切换效果
     }
@@ -73,7 +73,7 @@ export default class Header extends Component{
             </a>))}
           </nav>
           <div className="times">
-            <a target="_blank" href="https://github.com/ChuckOu"><img src={this.props.git} alt=""/></a>
+            <a target="_blank" href="https://github.com/Invictuschen"><img src={this.props.git} alt=""/></a>
             <time>{this.state.time}</time>
           </div>
         </div>

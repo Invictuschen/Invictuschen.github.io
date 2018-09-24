@@ -2,7 +2,7 @@ import React from 'react'
 import isPhone from '@/utils/isPhone'
 import Mobile from './mobile'
 import Wrapped from './Wrapped'
-import logo from './logo.png'
+import logo from './zw.jpg'
 import git from './github.png'
 import Pc from './PC'
 

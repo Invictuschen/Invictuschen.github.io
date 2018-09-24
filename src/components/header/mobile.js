@@ -3,8 +3,8 @@ import history from '@/utils/history'
 const  navlist = [
         {text:'HOME',herf:'/'},
         {text:'WORK',herf:'/work'},
-        {text:'ABOUT',herf:'/about'},
-        {text:'BLOG',herf:'/blog'},
+        // {text:'ABOUT',herf:'/about'},
+        // {text:'BLOG',herf:'/blog'},
       ]
 const HashIndex = ()=>{
     let paths = []

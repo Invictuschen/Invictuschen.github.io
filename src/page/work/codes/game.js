@@ -2,7 +2,7 @@ import React from 'react'
 import LazyImg from '@c/lazyImg'
 import Prism from 'prismjs'
 import PopLink from '@c/poplink'
-import gameImg from '@/images/work/gameImg.png'
+// import gameImg from '@/images/work/gameImg.png'
 const text = {
   init:`initPiece () {
         let _this = this
@@ -144,7 +144,7 @@ export default () => {
       <article className="work-pop-main work-pop-code">
         <h1>使用JS实现五子棋人机对战</h1>
         <p>js入门练习</p>
-        <LazyImg w="800px" h="800px" src={gameImg}/>
+        {/*<LazyImg w="800px" h="800px" src={gameImg}/>*/}
         <h5>初始化</h5>
         <p>创建棋盘数组和玩家赢法数组，在棋盘数组内添加落子方法</p>
         <pre className="language-javascript" dangerouslySetInnerHTML={{__html:initHtml}}></pre> 

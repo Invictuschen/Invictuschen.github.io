@@ -16,7 +16,7 @@ export default class MyIcon extends Component{
     this.state = {
       figures:[
         { src: homeIcon.sup, 
-          text: '点赞', 
+          text: 'Thumb Up',
           isShow: false,
           unmove:true, 
           child: SupPug,
@@ -25,9 +25,9 @@ export default class MyIcon extends Component{
             num:0,
             upSup:this.upSup.bind(this)}
         },
-        { src: homeIcon.readme, text: '说明', isShow: false, child: ShowMe,type:'main'},
-        { src: homeIcon.msg, text: '留言', isShow: false, child: Msgs,type:'wathet'},
-        { src: homeIcon.setting, text: '设置', isShow: false, child: Setting,type:'setting'}
+        // { src: homeIcon.readme, text: '说明', isShow: false, child: ShowMe,type:'main'},
+        { src: homeIcon.msg, text: 'Leave Message', isShow: false, child: Msgs,type:'wathet'}
+        // { src: homeIcon.setting, text: '设置', isShow: false, child: Setting,type:'setting'}
       ]
     }
     this.upload = 0

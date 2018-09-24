@@ -19,7 +19,8 @@ export default class Msgs extends Component{
       isInput:false,
       msgs:[],
       onReset: false,
-      moreText: null
+      moreText: null,
+      pid : "meg"
     }
     this.onLoad = false
     this.loadAll = false
@@ -133,35 +134,36 @@ export default class Msgs extends Component{
     console.log(this.props.other)
     return(
       <div className={Css.msgCenter}>
-        <div onScroll={this.onScroll.bind(this)} className="figure-pop-main">
-          {this.state.onReset
-          ? <div className="loading-spinner"></div>
-          : <ul ref="msgUl" className={Css.msgBox}>
-          {this.state.msgs.map(msg => <Msg key={msg._id} {...msg}/>)}
-          </ul>}
-          <div style={{textAlign:"center",transform:"translateY(-50px)"}}>{this.state.moreText}</div>
-        </div>
-        {!this.props.other.user.email
-          ?<span onClick={this.toggleShow.bind(this)} className={Css.putButton}>
-            留言
-          </span>
-          :<div onMouseDown={e => e.stopPropagation()} className={Css.msgInput}>
-            <input ref="msgInput" placeholder="净化荧屏，世界和平" type="text"/>
-            <span onClick={this.messagesUp.bind(this)} className={Css.msgButton}>留言</span>
-          </div>
-        }
-        <CSSTransition
-          in={this.state.isInput}
-            key='tests'
-            timeout={200}
-            unmountOnExit
-            classNames="fade">
-         <Portal>
-           <Pop unmove={true} close={this.toggleShow.bind(this)} title="登陆" type="white">
-            <SginIn user={this.props.other.user} close={this.toggleShow.bind(this)} isErro={this.props.other.isErro} setUser={this.props.other.setUser}/>
-           </Pop>
-         </Portal>
-        </CSSTransition>
+          <p className={Css.pid}>To Be Continued...</p>
+        {/*<div onScroll={this.onScroll.bind(this)} className="figure-pop-main">*/}
+          {/*{this.state.onReset*/}
+          {/*? <div className="loading-spinner"></div>*/}
+          {/*: <ul ref="msgUl" className={Css.msgBox}>*/}
+          {/*{this.state.msgs.map(msg => <Msg key={msg._id} {...msg}/>)}*/}
+          {/*</ul>}*/}
+          {/*<div style={{textAlign:"center",transform:"translateY(-50px)"}}>{this.state.moreText}</div>*/}
+        {/*</div>*/}
+        {/*{!this.props.other.user.email*/}
+          {/*?<span onClick={this.toggleShow.bind(this)} className={Css.putButton}>*/}
+            {/*Leave Message*/}
+          {/*</span>*/}
+          {/*:<div onMouseDown={e => e.stopPropagation()} className={Css.msgInput}>*/}
+            {/*<input ref="msgInput" placeholder="净化荧屏，世界和平" type="text"/>*/}
+            {/*<span onClick={this.messagesUp.bind(this)} className={Css.msgButton}>Leave Message</span>*/}
+          {/*</div>*/}
+        {/*}*/}
+        {/*<CSSTransition*/}
+          {/*in={this.state.isInput}*/}
+            {/*key='tests'*/}
+            {/*timeout={200}*/}
+            {/*unmountOnExit*/}
+            {/*classNames="fade">*/}
+         {/*<Portal>*/}
+           {/*<Pop unmove={true} close={this.toggleShow.bind(this)} title="登陆" type="white">*/}
+            {/*<SginIn user={this.props.other.user} close={this.toggleShow.bind(this)} isErro={this.props.other.isErro} setUser={this.props.other.setUser}/>*/}
+           {/*</Pop>*/}
+         {/*</Portal>*/}
+        {/*</CSSTransition>*/}
       </div>
     )
   }

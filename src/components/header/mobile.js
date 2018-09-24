@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import history from '@/utils/history'
 const  navlist = [
-        {text:'HOME',herf:'/'},
+        {text:'HOME',herf:'/home'},
         {text:'WORK',herf:'/work'},
         // {text:'ABOUT',herf:'/about'},
         // {text:'BLOG',herf:'/blog'},
@@ -10,7 +10,7 @@ const HashIndex = ()=>{
     let paths = []
     navlist.map((i)=>paths.push(i.herf.toString())) 
     const path = history.location.pathname.toString();
-    const index = paths.indexOf(path)> -1 ? paths.indexOf(path) : 1
+    const index = paths.indexOf(path)> -1 ? paths.indexOf(path) : 0;
     return index
 }
 export default class Mobile extends Component{

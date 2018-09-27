@@ -19,10 +19,10 @@ export default class Work extends Component{
     super();
     this.state={
     desginFigu:[
-        { src: workIcon.logo1, text: '优品养车logo', isShow: false, child: desgin.logo1,type:'white'},
-        { src: workIcon.logo2, text: '优品养车logo', isShow: false, child: desgin.logo2,type:'white'},
-        { src: workIcon.chick, text: '老思鸡H5', isShow: false, child: desgin.chicken,type:'white'},
-        { src: workIcon.moneky, text: '校招H5', isShow: false, child: desgin.monky,type:'white'}
+        { src: workIcon.logo1, text: 'CSS Burger Build', isShow: false, child: desgin.logo1,type:'white'},
+        // { src: workIcon.logo2, text: '优品养车logo', isShow: false, child: desgin.logo2,type:'white'},
+        // { src: workIcon.chick, text: '老思鸡H5', isShow: false, child: desgin.chicken,type:'white'},
+        // { src: workIcon.moneky, text: '校招H5', isShow: false, child: desgin.monky,type:'white'}
       ],
     codeFigu:
     [
@@ -87,20 +87,21 @@ export default class Work extends Component{
     const type = this.state.types
     return (
       <main className={"page "+scroll}>
-        <div style={{height:'auto',paddingBottom:'6rem'}} className="app-center">
-          <Layout>
+      <ListCompon style={type!=="code"} title="Portfolio" figures={this.state.desginFigu} shows={this.show.bind(this)}  close={this.close.bind(this)}/>
+        {/* <div style={{height:'auto',paddingBottom:'6rem'}} className="app-center"> */}
+          {/* <Layout>
               <BurgerBuilder />
-          </Layout>
-          {/*<ListCompon style={type!=="code"} title="Desgin" figures={this.state.desginFigu} shows={this.show.bind(this)}  close={this.close.bind(this)}/>*/}
-          {/*<ListCompon style={type==="code"} title="Code" figures={this.state.codeFigu} shows={this.show.bind(this)}  close={this.close.bind(this)}/>*/}
-          {/*<div onClick={this.toAbout} className={more}>*/}
-            {/*<span className={moreIcon}>*/}
-              {/*<i></i>*/}
-            {/*</span>*/}
-            {/*<span className="needsclick">VIEW MORE</span>*/}
-          {/*</div>*/}
-          {/*{this.state.switchin?<Switch type="enter" callback={this.switchOut.bind(this)}/>:''}*/}
-        </div>
+          </Layout> */}
+          
+          {/* <ListCompon style={type==="code"} title="Code" figures={this.state.codeFigu} shows={this.show.bind(this)}  close={this.close.bind(this)}/> */}
+          {/* <div onClick={this.toAbout} className={more}>
+            <span className={moreIcon}>
+              <i></i>
+            </span>
+            <span className="needsclick">VIEW MORE</span>
+          </div> */}
+          {/* {this.state.switchin?<Switch type="enter" callback={this.switchOut.bind(this)}/>:''} */}
+        {/* </div> */}
       </main>
     )
   }

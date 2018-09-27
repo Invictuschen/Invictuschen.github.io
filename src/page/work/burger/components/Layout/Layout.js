@@ -6,7 +6,7 @@ import SideDrawer from "../Navigation/SideDrawer/SideDrawer";
 const layout = props => (
   <Aux>
     <div>
-      <Toolbar />
+      {/* <Toolbar /> */}
       {/*<SideDrawer />, BackDrop*/}
     </div>
     <main className={classes.Content}>{props.children}</main>

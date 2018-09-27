@@ -19,7 +19,7 @@ export default class ListCompon extends Component{
         close = {this.props.close} 
         {...fig}/>)}        
       </div>
-      <hr align='center' width='100%' color='#1e1e1e' size="1"/>
+      {/* <hr align='center' width='100%' color='#1e1e1e' size="1"/> */}
     </div>
     )
   }

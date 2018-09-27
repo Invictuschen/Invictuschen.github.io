@@ -65,7 +65,7 @@ export default class Header extends Component{
     return(
        <div className="app-center">
           <nav ref="test" className="nav">
-            <span><img src={this.props.logo} className="logo" alt=""/></span>
+            <span className="logo"><img src={this.props.logo} className="wsm" alt=""/></span>
             {this.state.nav.map((nav,i) => (<a key={i} 
             className={nav.indent? 'nav-index':''}
             onClick={this.toLink.bind(this,nav)}>

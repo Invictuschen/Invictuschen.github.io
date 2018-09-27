@@ -34,7 +34,7 @@ export default class PopSelf extends Component {
     this.positions.w = pops.width
     this.positions.h = pops.height
     this.positions.constx = event.clientX - pops.left // 因为弹窗用translate(-50%)来居中，所以posiiton需要减去宽高一半
-    this.positions.consty = event.clientY - pops.top  
+    this.positions.consty = event.clientY - pops.top
     this.isMove = true
   }
   handleMove(event){ 

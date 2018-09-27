@@ -1,4 +1,4 @@
-import logo1 from './logo1'
+import logo1 from './burger'
 import logo2 from './logo2'
 import chicken from './chicken'
 import monky from './monky'
